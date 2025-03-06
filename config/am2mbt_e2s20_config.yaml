@@ -1,0 +1,39 @@
+gridid: e2s20
+overwrite: False
+var_fn_template: "{dirname}/{gridid}_{varname}_{tstamp}.dat"
+tb_fn_template: "{outputdir}/{prefix}_{gridid}_{tb}.dat"
+sic_fnstem_template: "{output_dir}/siconc_{prefix}_{gridid}"
+ancillary_dir: "./ancillary_ease2"
+output_dir: "./output"
+intermed_dir: "./intermed"
+grid_vars:
+  h37:
+  - h36
+  - lat36
+  - lon36
+  v19:
+  - v18
+  - lat18
+  - lon18
+  v22:
+  - v23
+  - lat23
+  - lon23
+  v37:
+  - v36
+  - lat36
+  - lon36
+nc_vars:
+  h36: Brightness_Temperature_36_GHzH
+  landflag: Land_Ocean_Flag_6_to_36
+  lat18: Latitude_for_18
+  lat23: Latitude_for_23
+  lat36: Latitude_for_36
+  latlow: Latitude_for_Low_Resolution
+  lon18: Longitude_for_18
+  lon23: Longitude_for_23
+  lon36: Longitude_for_36
+  lonlow: Longitude_for_Low_Resolution
+  v18: Brightness_Temperature_18_GHzV
+  v23: Brightness_Temperature_23_GHzV
+  v36: Brightness_Temperature_36_GHzV

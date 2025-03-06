@@ -1,0 +1,14 @@
+# Run pytest with coverage for this package
+#
+# Usage:
+#   From the <root> of this package, run:
+#     ./tests/covtest
+
+# No pytest coverage report
+#pytest --cov=mwi_siconc_proxy
+
+# Text file annotation
+#pytest --cov=mwi_siconc_proxy --cov-report=annotate:cov_report
+
+pytest --cov=mwi_siconc_proxy --cov-report=html:cov_report
+
