@@ -1,0 +1,33 @@
+name: nam2sic
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - xarray
+  - pyresample
+  - dask
+  - zarr
+  - scipy
+  - numpy
+  - pandas
+  - gdal
+  - h5py
+  - netCDF4
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - ipykernel
+  - networkx
+  - statsmodels
+  - cookiecutter
+  - pyyaml
+  - pytest
+  - pytest-cov
+  - readline
+  - black
+  - ruff
+  - pip
+  - pdbpp
+  - loguru
+  - pydantic~=1.9
