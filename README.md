@@ -61,9 +61,12 @@ Note: Some users prefer the command `mamba` intead of `conda.  Either will work.
 This will create a conda environment named: `mwi_siconc_proxy`.  (See the top of the `environment.yml` file.
 
 To install this repository as an editable module, the method we have found to be least problematic is:
-  - Activate the conda environment: `conda activate mwi_siconc_proxy`
-  - Change directory to the root of this code repository, i.e. ./mwi_siconc_proxy/
-  - From the code repository directory, install this module using pip:  `python -m pip install --no-build-isolation --no-deps -e .`
+  - Activate the conda environment:
+    - `conda activate mwi_siconc_proxy`
+  - Change directory to the root of this code repository, i.e.:
+    - `cd ./mwi_siconc_proxy/`
+  - From the code repository directory, install this module using pip:
+    - `python -m pip install --no-build-isolation --no-deps -e .`
     - Note that `.` at the end of that command; it indicates the directory in which the command is run
 
 # Run the sample scripts

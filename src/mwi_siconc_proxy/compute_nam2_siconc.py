@@ -459,6 +459,7 @@ def save_to_netcdf(
     flags = ds.createVariable('quality_flags', np.uint8, ('y', 'x'), zlib=True)  # noqa
     flags[:, :] = flag_field[:, :]
     flags.long_name = 'Quality Flags'
+    flags.grid_mapping = 'crs'
     flags.units = 1
     flags.comment = flag_field_meanings
 
