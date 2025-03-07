@@ -3,7 +3,7 @@ overwrite: False
 var_fn_template: "{dirname}/{gridid}_{varname}_{tstamp}.dat"
 tb_fn_template: "{outputdir}/{prefix}_{gridid}_{tb}.dat"
 sic_fnstem_template: "{output_dir}/siconc_{prefix}_{gridid}"
-ancillary_dir: "./ancillary_ease2"
+ancillary_dir: "./mwi_ancillary"
 output_dir: "./output"
 intermed_dir: "./intermed"
 grid_vars:

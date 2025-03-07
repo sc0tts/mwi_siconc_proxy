@@ -9,14 +9,14 @@ __dict__:
   v1937_params: !!python/object:pm_icecon.config.models.bt.TbSetParams
     __dict__:
       ice_tie_point_set: !!python/tuple
-      - 255.67
-      - 258.341
+      - 256.3
+      - 258.9
       lnline:
-        offset: 47.0061
-        slope: 0.809335
+        offset: 48.26
+        slope: 0.8048
       water_tie_point_set: !!python/tuple
-      - 201.916
-      - 178.771
+      - 207.2
+      - 182.4
     __fields_set__: !!set
       ice_tie_point_set: null
       lnline: null
@@ -25,14 +25,14 @@ __dict__:
   vh37_params: !!python/object:pm_icecon.config.models.bt.TbSetParams
     __dict__:
       ice_tie_point_set: !!python/tuple
-      - 255.67
-      - 241.713
+      - 256.3
+      - 241.2
       lnline:
-        offset: -73.5471
-        slope: 1.21104
+        offset: -71.99
+        slope: 1.2
       water_tie_point_set: !!python/tuple
-      - 201.916
-      - 132.815
+      - 207.2
+      - 131.9
     __fields_set__: !!set
       ice_tie_point_set: null
       lnline: null
@@ -41,15 +41,15 @@ __dict__:
   weather_filter_seasons:
   - !!python/object:pm_icecon.config.models.bt.WeatherFilterParamsForSeason
     __dict__:
-      end_day: 15
-      end_month: 10
+      start_month: 11
+      end_month: 4
       start_day: null
-      start_month: 6
+      end_day: null
       weather_filter_params: !!python/object:pm_icecon.config.models.bt.WeatherFilterParams
         __dict__:
-          wintrc: 89.2
-          wslope: 0.50375
-          wxlimt: 21.0
+          wintrc: 84.73
+          wslope: 0.5352
+          wxlimt: 13.7
         __fields_set__: !!set
           wintrc: null
           wslope: null
@@ -65,14 +65,14 @@ __dict__:
   - !!python/object:pm_icecon.config.models.bt.WeatherFilterParamsForSeason
     __dict__:
       end_day: null
-      end_month: 5
-      start_day: 16
-      start_month: 10
+      end_month: 9
+      start_day: null
+      start_month: 6
       weather_filter_params: !!python/object:pm_icecon.config.models.bt.WeatherFilterParams
         __dict__:
-          wintrc: 87.6467
-          wslope: 0.517333
-          wxlimt: 14.0
+          wintrc: 82.71
+          wslope: 0.5352
+          wxlimt: 21.7
         __fields_set__: !!set
           wintrc: null
           wslope: null

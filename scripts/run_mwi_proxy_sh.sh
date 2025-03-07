@@ -1,23 +1,25 @@
 #!/bin/bash
 #
-# run_proxy.sh
+# run_mwi_proxy_sh.sh
 #
 # Generate some sample mwi_proxy data
+# Southern Hemisphere
+# Day: 2025-02-01 (see swath_list_file name)
 
 set -e
 
 config_file=./mwi_siconc_proxy/config/am2mbt_e2s20_config.yaml
-swath_list_file=./swaths_20250201.txt
+swath_list_file=./mwi_proxy_data/mwiproxy20250201.txt
 bt_param_file=./mwi_siconc_proxy/config/btparams_nam2sic_sh.yaml
 
 # Set true/false for skipping steps
 # ...mostly for saving time during development
 
-#do_process_swathfiles=true
-do_process_swathfiles=false
+do_process_swathfiles=true
+#do_process_swathfiles=false
 
-#do_overlay_gridded_swaths=true
-do_overlay_gridded_swaths=false
+do_overlay_gridded_swaths=true
+#do_overlay_gridded_swaths=false
 
 do_compute_siconc=true
 #do_compute_siconc=false

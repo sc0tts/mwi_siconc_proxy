@@ -142,7 +142,7 @@ def get_land_mask(info):
             ydim=info['ydim'],
         )
     except FileNotFoundError:
-        raise RuntimeError(f'Unknown land_mask_fname for gridid: {gridid}')
+        raise RuntimeError(f'Unknown land_mask_fname for gridid: {gridid}\n{land_mask_fname}')
 
     return land_mask
 
@@ -459,6 +459,7 @@ def save_to_netcdf(
     flags = ds.createVariable('quality_flags', np.uint8, ('y', 'x'), zlib=True)  # noqa
     flags[:, :] = flag_field[:, :]
     flags.long_name = 'Quality Flags'
+    flags.grid_mapping = 'crs'
     flags.units = 1
     flags.comment = flag_field_meanings
 

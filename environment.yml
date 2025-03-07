@@ -1,33 +1,26 @@
-name: nam2sic
+name: mwi_siconc_proxy
 channels:
   - defaults
   - conda-forge
+  - nsidc          # provides pm_icecon
 dependencies:
-  - python=3.11
-  - xarray
+  - python=3.10    # pm_icecon requires python 3.10
+  - xarray         # used by pm_icecon
   - pyresample
-  - dask
-  - zarr
-  - scipy
+  - dask           # needed by pyresample's interpolator
+  - zarr           # needed by pyresample's interpolator
   - numpy
-  - pandas
   - gdal
   - h5py
   - netCDF4
-  - scikit-learn
-  - matplotlib
-  - seaborn
-  - ipykernel
-  - networkx
-  - statsmodels
-  - cookiecutter
   - pyyaml
-  - pytest
-  - pytest-cov
-  - readline
-  - black
-  - ruff
-  - pip
-  - pdbpp
-  - loguru
-  - pydantic~=1.9
+  - pytest         # for development
+  - pytest-cov     # for development
+  - black          # for development
+  - ruff           # for development
+  - pip            # for installation into local env
+  - pdbpp          # for development (debugger)
+  - readline       # used by pdbpp
+  - loguru         # used in pm_icecon
+  - pydantic~=1.9  # version needed for pm_icecon
+  - pm_icecon      # needed for bootstrap algorithm
