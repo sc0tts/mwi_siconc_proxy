@@ -142,7 +142,7 @@ def get_land_mask(info):
             ydim=info['ydim'],
         )
     except FileNotFoundError:
-        raise RuntimeError(f'Unknown land_mask_fname for gridid: {gridid}')
+        raise RuntimeError(f'Unknown land_mask_fname for gridid: {gridid}\n{land_mask_fname}')
 
     return land_mask
 
